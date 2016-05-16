@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" default="0" label="JGLOBAL_FIELD_ID_LABEL" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC"/>
+		<field name="text" type="text" class="inputbox" label="COM_KIDE_TEXT" required="true" />
+		<field name="name" type="text" class="inputbox" label="COM_KIDE_NAME" required="true" />
+		<field name="userid" type="text" default="0" class="inputbox" label="COM_KIDE_USERID" required="true" />
+		<field name="rango" type="text" default="0" class="inputbox" label="COM_KIDE_RANGO" />
+		<field name="color" type="text" default="000000" class="inputbox" label="COM_KIDE_COLOR" />
+		<field name="img" type="text" class="inputbox" label="COM_KIDE_IMG" />
+		<field name="url" type="text" class="inputbox" label="COM_KIDE_URL" />
+		<field name="time" type="text" default="0" class="inputbox" label="Time" />
+		<field name="token" type="text" default="0" class="inputbox" label="Token" />
+	</fieldset>
+</form>

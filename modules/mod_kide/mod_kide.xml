@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension method="upgrade" type="module" version="3.0">
+	<name>mod_kide</name>
+	<author>JoniJnm</author>
+	<creationDate>4 Jan 2012</creationDate>
+	<authorUrl>www.JoniJnm.es</authorUrl>
+	<version>1.1</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Kide Shoutbox</description>
+	<files>
+		<filename module="mod_kide">mod_kide.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_kide/elements">
+			<fieldset name="basic">
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="template" type="kidetemplates" default="default" label="Template" />
+				<field name="autoiniciar" type="list" default="0" label="Auto Init" description="If not, Kide will be 'sleeping' until the user move the mouse to its position">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_hour" type="list" default="0" label="Show hour">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_sessions" type="list" default="0" label="Show sessions">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_privados" type="list" default="0" label="Show privates" description="Needs 'show sessions' on. Only works in pro version.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension method="upgrade" type="component" version="3.0">
+	<name>Kide</name>
+	<author>JoniJnm</author>
+	<creationDate>8 Dec 2012</creationDate>
+	<authorUrl>www.JoniJnm.es</authorUrl>
+	<version>1.2 beta</version>
+	<description>Kide Shoutbox</description>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	
+	<files folder="front">
+		<filename>kide.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>defines.php</filename>
+		
+		<folder>controllers</folder>
+		<folder>js</folder>
+		<folder>libs</folder>
+		<folder>direct</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>templates</folder>
+		<folder>views</folder>
+	</files>
+   
+	<languages folder="lang_front">
+		<language tag="ca-ES">ca-ES.com_kide.ini</language>
+		<language tag="cs-CZ">cs-CZ.com_kide.ini</language>
+		<language tag="da-DK">da-DK.com_kide.ini</language>
+		<language tag="de-DE">de-DE.com_kide.ini</language>
+		<language tag="en-GB">en-GB.com_kide.ini</language>
+		<language tag="es-ES">es-ES.com_kide.ini</language>
+		<language tag="fa-IR">fa-IR.com_kide.ini</language>
+		<language tag="fr-FR">fr-FR.com_kide.ini</language>
+		<language tag="hr-HR">hr-HR.com_kide.ini</language>
+		<language tag="hu-HU">hu-HU.com_kide.ini</language>
+		<language tag="it-IT">it-IT.com_kide.ini</language>
+		<language tag="nl-NL">nl-NL.com_kide.ini</language>
+		<language tag="pl-PL">pl-PL.com_kide.ini</language>
+		<language tag="pt-BR">pt-BR.com_kide.ini</language>
+		<language tag="ru-RU">ru-RU.com_kide.ini</language>
+		<language tag="sl-SI">sl-SI.com_kide.ini</language>
+		<language tag="sr-RS">sr-RS.com_kide.ini</language>
+		<language tag="tr-TR">tr-TR.com_kide.ini</language>
+	</languages>
+
+	<administration>
+		<menu view="messages">Kide Chat</menu>
+		<submenu>
+			<menu view="messages">Messages</menu>
+			<menu view="bans">Bans</menu>
+			<menu view="iconos">Icons</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>kide.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<languages folder="lang_admin">
+			<language tag="ca-ES">ca-ES.com_kide.ini</language>
+			<language tag="cs-CZ">cs-CZ.com_kide.ini</language>
+			<language tag="da-DK">da-DK.com_kide.ini</language>
+			<language tag="de-DE">de-DE.com_kide.ini</language>
+			<language tag="en-GB">en-GB.com_kide.ini</language>
+			<language tag="es-ES">es-ES.com_kide.ini</language>
+			<language tag="fa-IR">fa-IR.com_kide.ini</language>
+			<language tag="fr-FR">fr-FR.com_kide.ini</language>
+			<language tag="hr-HR">hr-HR.com_kide.ini</language>
+			<language tag="hu-HU">hu-HU.com_kide.ini</language>
+			<language tag="it-IT">it-IT.com_kide.ini</language>
+			<language tag="nl-NL">nl-NL.com_kide.ini</language>
+			<language tag="pl-PL">pl-PL.com_kide.ini</language>
+			<language tag="pt-BR">pt-BR.com_kide.ini</language>
+			<language tag="ru-RU">ru-RU.com_kide.ini</language>
+			<language tag="sl-SI">sl-SI.com_kide.ini</language>
+			<language tag="sr-RS">sr-RS.com_kide.ini</language>
+		</languages>
+	</administration>
+</extension>

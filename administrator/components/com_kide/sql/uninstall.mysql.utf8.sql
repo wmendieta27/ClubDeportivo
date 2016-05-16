@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `#__kide`, `#__kide_bans`, `#__kide_iconos`, `#__kide_privados`, `#__kide_privados_offline`, `#__kide_sesion`;
